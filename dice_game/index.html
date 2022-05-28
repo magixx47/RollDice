@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Roll Dice</title>
+  </head>
+  <body>
+    <div class="screen " id ="screen1">
+      <h1>Roll Dice Game</h1>
+      <button class="btn" id="startBtn">Play Game</button>
+    </div>
+
+    <div class="screen2">
+      <h1 style="padding:1rem" id ='title'> </h1>
+
+      <div class="container">
+        <div class="dice first-face hidden">
+          <span class="dot">
+          </span>
+        </div>
+        
+        <div class="dice second-face hidden">
+          <span class="dot">
+          </span>
+          <span class="dot">
+          </span>
+        </div>
+        
+        <div class="dice third-face hidden">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
+        <div class="fourth-face dice hidden">
+          <div class="column">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="column ">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="fifth-face dice hidden">
+          
+          <div class="column">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+          
+          <div class="column">
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        
+        </div>
+        <div class="sixth-face dice ">
+          <div class="column">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="column">
+            <span class="dot"></span>
+            <span class="dot"></span>
+                <span class="dot"></span>
+          </div>
+        
+        </div>
+      </div>
+
+        <div class="screenboard ">
+              <div>
+                  <h5 >PLAYER 1</h5>
+                    <h5 id="score1"> 00</h5>
+              </div>
+              <button class="rollBtn" id="rollBtn" onclick="roll()">ROLL Dice</button>
+                 
+              <div>
+                <h5 >PLAYER 2</h5>
+                  <h5 id="score2">00</h5>
+            </div>
+              
+        </div>
+    
+      
+    </div>
+
+    <div class="screen ">
+      
+      <h1 id ="winner"> </h1>
+        <button class="btn" onclick="playAgain()"> playAgain </button>
+
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

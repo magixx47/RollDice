@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1330;
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+.btn {
+  border: 0;
+  background-color: #fff;
+  color: #516dff;
+  padding: 15px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rollBtn{
+  border: 0;
+  background-color: #fff;
+  color: #516dff;
+  padding: 30px 30px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover , .rollBtn{
+  opacity: 0.9;
+}
+
+.btn:focus , .rollBtn{
+  outline: 0;
+}
+
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.page1 {
+  margin-top:-100vh;
+}
+.page2{
+   margin-top: -200vh;
+}
+.screen2{
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+   
+}
+
+.container{
+  display: flex;
+   width: 80vw;
+
+    height: 50vh;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.screenboard{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  margin-top: 4rem;
+  gap: 200px;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  padding: 4px;
+  background-color: tomato;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  margin-right : 10px;
+}
+.dot{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.second-face{
+  display: flex ;
+  justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self :center;
+}
+
+
+.fourth-face , .sixth-face, .fifth-face{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column , .sixth-face .column, .fifth-face .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.hidden{
+   display:none;
+}
+
+.turn{
+  animation:spin 4ms linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+
+}
